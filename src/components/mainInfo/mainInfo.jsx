@@ -14,7 +14,7 @@ export default function MainInfo(props) {
         >
           <Col>
             <Fade delay={500} cascade damping={0.3}>
-              <h1>BARU</h1>
+              <h1>BARUGALA PAVAN SAI/</h1>
               <p>FULL STACK DEVELOPER | MERN STACK DEVELOPER</p>
             </Fade>
           </Col>
