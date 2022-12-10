@@ -1,0 +1,66 @@
+.home {
+    background-color: white;
+    height: 100vh;
+}
+
+.arrowContainer {
+    position: relative;
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    border: 1px solid rgba(2, 224, 147);
+    box-shadow: rgba(2, 224, 147, 0.25) 0px 54px 55px, rgba(2, 224, 147, 0.12) 0px -12px 30px, rgba(2, 224, 147, 0.12) 0px 4px 6px, rgba(2, 224, 147, 0.17) 0px 12px 13px, rgba(2, 224, 147, 0.09) 0px -3px 5px !important;
+}
+
+.arrowIcon {
+    transform: rotate(315deg);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+
+.skills{
+    text-align: start !important;
+}
+
+.skillsBox{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px !important;
+    box-shadow: rgba(2, 224, 147, 0.25) 0px 54px 55px, rgba(2, 224, 147, 0.12) 0px -12px 30px, rgba(2, 224, 147, 0.12) 0px 4px 6px, rgba(2, 224, 147, 0.17) 0px 12px 13px, rgba(2, 224, 147, 0.09) 0px -3px 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+.skillsBox:hover{
+    transform: scale(1.05);
+}
+
+.projectCard{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.projectImg{
+    height: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.projectButton{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-color:white !important;
+}
