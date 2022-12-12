@@ -1,7 +1,123 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(2, 224, 147);
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
 .home {
-    background-color: white;
+    /* background-color: rgb(86, 210, 206); */
     height: 100vh;
 }
+
+h1::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h1 {
+    position: relative;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: #39FF14;
+        font-family: system-ui, sans-serif;
+    }
+    .mainInfoName{
+        color: #39FF14;  
+    }
+    .footerMain{
+        background-color: black !important;
+        color: #39FF14 !important;
+        font-family: system-ui, sans-serif;
+    }
+    #nav{
+        background-color: black !important;
+    }
+    .navBarFont{
+        color:#39FF14;
+    }
+    .skillsBox{
+        background-color: #212529 !important;
+    }
+    .projectCard {
+        background-color: #212529;
+    }
+    .experienceCard{
+        background-color: #212529 !important;
+        color: #39FF14 !important;
+    }
+    .projectButton{
+        background-color: #000 !important;
+        color: #39FF14 !important;
+        border-color:#39FF14  !important;
+    }
+    .footerButton{
+        background-color: #000 !important;
+        color: #39FF14 !important;
+        border-color:#39FF14  !important;
+    }
+    .arrow{
+        background-color: #000 !important;
+        border-color:#39FF14 !important ;
+        
+    }
+    .arrowIcon{
+        color:#39FF14;
+    }
+    .aboutImage {
+        --color:#39FF14 !important;
+    }    
+  }
+
+
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
+
+
 
 .arrowContainer {
     position: relative;
@@ -13,27 +129,113 @@
 }
 
 .arrow {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     transform: rotate(45deg);
     border: 1px solid rgba(2, 224, 147);
     box-shadow: rgba(2, 224, 147, 0.25) 0px 54px 55px, rgba(2, 224, 147, 0.12) 0px -12px 30px, rgba(2, 224, 147, 0.12) 0px 4px 6px, rgba(2, 224, 147, 0.17) 0px 12px 13px, rgba(2, 224, 147, 0.09) 0px -3px 5px !important;
+    position: relative;
 }
 
 .arrowIcon {
     transform: rotate(315deg);
     font-weight: bolder;
     font-size: 1.5rem;
+    position: absolute;
+    animation: MoveUpDown 1.5s linear infinite;
+    top: 20%;
+    right: 40%;
+
+
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        top: 40%;
+        right: 20%;
+    }
+
+    50% {
+        top: 20%;
+        right: 40%;
+    }
 }
 
 
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-.skills{
+.aboutImage{
+    height:12rem;
+    width:12rem;
+    border-radius:50%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+@property --gap{
+    syntax: '<length>';
+    inherits: true;
+    initial-value: 0;
+  }
+  @property --angle{
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+  }
+  
+  .aboutImage {
+    --border: 15px;
+    --gap: 12px;
+    --color: rgba(2, 224, 147);
+    
+    
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    padding: calc(var(--border) + var(--gap));
+    
+    --angle: 90deg;
+    background:
+      radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 85.35% 85.35%,
+      conic-gradient(from calc(180deg - var(--angle)/2),#0000 var(--angle),var(--color) 0),
+      radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 14.65% 85.35%;
+    background-size: var(--border) var(--border),auto;
+    background-repeat: no-repeat;
+    
+    -webkit-mask:
+      radial-gradient(farthest-side, 
+       #000  calc(99%  - calc(var(--border) + var(--gap))),
+       #0000 calc(100% - calc(var(--border) + var(--gap))) 
+             calc(99%  - var(--border)), 
+       #000  calc(100% - var(--border)));
+            mask:
+      radial-gradient(farthest-side, 
+       #000  calc(99%  - calc(var(--border) + var(--gap))),
+       #0000 calc(100% - calc(var(--border) + var(--gap))) 
+             calc(99%  - var(--border)), 
+       #000  calc(100% - var(--border)));
+    transition: --angle .4s,--gap .4s;
+  }
+  .aboutImage:hover {
+    --angle: 0deg;
+    --gap: 5px;
+  }
+  
+
+.skills {
     text-align: start !important;
 }
 
-.skillsBox{
+.skillsBox {
     height: 5rem;
     width: 5rem;
     border-radius: 50px !important;
@@ -42,25 +244,41 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    
+
 }
 
-.skillsBox:hover{
+.skillsBox:hover {
     transform: scale(1.05);
 }
 
-.projectCard{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.projectsHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.projectImg{
+.projectCard {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+
+.projectImg {
     height: 10rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.projectButton{
+.projectButton {
     background-color: white;
     color: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    border-color:white !important;
+    border-color: white !important;
+}
+
+.experienceImage {
+    
+}
+
+
+.footerIcon:hover {
+    transform: scale(1.5);
 }
