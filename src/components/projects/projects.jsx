@@ -9,7 +9,7 @@ export default function Projects() {
   };
   return (
     <Container id="projects">
-      <div className="projectsHeading"><h4 className='mainInfoName'>Projects</h4><a href="https://github.com/pavansai505" target="_blank" style={{color:'blue',fontSize:'1.2rem'}}>view more <BsChevronDoubleRight></BsChevronDoubleRight></a></div>
+      <div className="projectsHeading"><h4 className='mainInfoName'>Projects</h4><a href="https://github.com/pavansai505" target="_blank" style={{color:'blue',fontSize:'1.2rem',textDecoration:'none'}}>view more <BsChevronDoubleRight></BsChevronDoubleRight></a></div>
 
       <Row
         className="mt-5 pb-5"

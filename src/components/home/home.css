@@ -76,6 +76,9 @@ html {
     .navBarFont{
         color:#39FF14;
     }
+    h1::before {
+        background: #212529;
+    }
     .skillsBox{
         background-color: #212529 !important;
     }
