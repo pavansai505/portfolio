@@ -65,8 +65,8 @@ function NavBar() {
             render={() => (
               <Nav className="ms-auto">
                 <GiHamburgerMenu onClick={handleShow}></GiHamburgerMenu>
-                <Offcanvas show={show} onHide={handleClose}>
-                  <Offcanvas.Header closeButton>
+                <Offcanvas show={show} onHide={handleClose} className="offCanvasNav">
+                  <Offcanvas.Header closeButton style={{backgroundColor:'#212529'}}>
                     <Offcanvas.Title>Menu</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>

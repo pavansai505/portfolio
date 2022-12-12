@@ -57,6 +57,13 @@ html {
 }
 
 @media screen and (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-track {
+        background: #000;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #39FF14;
+    }
+    
     body {
         background-color: black;
         color: #39FF14;
@@ -73,8 +80,16 @@ html {
     #nav{
         background-color: black !important;
     }
+    .offCanvasNav{
+        background-color: black !important;
+    }
+    
     .navBarFont{
         color:#39FF14;
+    }
+    .navBarFont:hover{
+        color:#39FF14 !important;
+        transform: scale(1.1);
     }
     h1::before {
         background: #212529;
