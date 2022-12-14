@@ -14,7 +14,7 @@ export default function Experience() {
       <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
         <Paper
           elevation={24}
-          className="p-5 mt-5 experienceCard"
+          className=" mt-5 experienceCard"
           sx={{ borderRadius: "25px", width: "60vw", minWidth: "20rem" }}
         >
           <Container className="">
@@ -62,7 +62,7 @@ export default function Experience() {
 
         <Paper
           elevation={24}
-          className="p-5 mt-5 experienceCard"
+          className=" mt-5 experienceCard"
           sx={{ borderRadius: "25px", width: "60vw", minWidth: "20rem" }}
         >
           <Container className="">
@@ -108,7 +108,7 @@ export default function Experience() {
         </Paper>
         <Paper
           elevation={24}
-          className="p-5 mt-5 experienceCard"
+          className=" mt-5 experienceCard"
           sx={{ borderRadius: "25px", width: "60vw", minWidth: "20rem" }}
         >
           <Container className="">

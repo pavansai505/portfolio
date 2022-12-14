@@ -6,6 +6,7 @@ import { FiArrowDown } from "react-icons/fi";
 export default function MainInfo(props) {
   return (
     <Container style={{ display:'flex',justifyContent:'center',alignItems:'center' , height:'50rem' }} id="mainInfo">
+      
         <Row
           lg={1}
           xs={1}
@@ -20,8 +21,10 @@ export default function MainInfo(props) {
           </Col>
           <Col className="arrowContainer">
             <Paper
-              onClick={() =>
-                document.getElementById("about").scrollIntoView()
+              onClick={() =>{
+
+                document.getElementById("home").classList.remove("homeOverFlow")
+                document.getElementById("about").scrollIntoView()}
               }
               style={{ height: "4rem", width: "4rem" }}
               className="arrow"

@@ -12,10 +12,10 @@ export default function About() {
           className="aboutImage"
         ></Image>
         <p
-          style={{ width: "60vw", minWidth: "20rem", wordBreak: "keep-all" }}
+          style={{ width: "60vw", minWidth: "20rem", wordBreak: "keep-all",textAlign:'justify' }}
           className='mainInfoName mt-5' 
         >
-          <span style={{fontWeight:'bolder'}}>" I am</span> an enthusiastic <span style={{fontWeight:'bold'}}>UI/UX developer</span> from Salur, who has a strong
+          <span style={{fontWeight:'bolder'}}>" I am</span> an enthusiastic <span style={{fontWeight:'bold'}}>UI/UX developer</span> from India, who has a strong
           grasp of the <span style={{fontWeight:'bold'}}>MERN stack</span>, having recently completed a 4-month course in
           MERN from GreatLearning. My expertise lies in <span style={{fontWeight:'bold'}}>full-stack development</span>&nbsp;
           and creating responsive websites. Aside from this, I have good

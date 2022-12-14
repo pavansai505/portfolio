@@ -2,14 +2,23 @@ import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Fade } from "react-awesome-reveal";
-import {BsChevronDoubleRight} from 'react-icons/bs';
+import { BsChevronDoubleRight } from "react-icons/bs";
 export default function Projects() {
   const goToGitHub = (link) => {
     window.open(link, "_blank");
   };
   return (
     <Container id="projects">
-      <div className="projectsHeading"><h4 className='mainInfoName'>Projects</h4><a href="https://github.com/pavansai505" target="_blank" style={{color:'cyan',fontSize:'1.2rem',textDecoration:'none'}}>view more <BsChevronDoubleRight></BsChevronDoubleRight></a></div>
+      <div className="projectsHeading">
+        <h4 className="mainInfoName">Projects</h4>
+        <a
+          href="https://github.com/pavansai505"
+          target="_blank"
+          style={{ color: "cyan", fontSize: "1.2rem", textDecoration: "none" }}
+        >
+          view more <BsChevronDoubleRight></BsChevronDoubleRight>
+        </a>
+      </div>
 
       <Row
         className="mt-5 pb-5"
@@ -29,9 +38,12 @@ export default function Projects() {
                   variant="top"
                   src={require("../../images/ecommerce.png")}
                   className="projectImg"
+                  onClick={() =>
+                    goToGitHub("https://github.com/pavansai505/E-Commerce")
+                  }
                 />
                 <Card.Body className="mt-3">
-                  <Card.Title className='mainInfoName'>E-Commerce</Card.Title>
+                  <Card.Title className="mainInfoName">E-Commerce</Card.Title>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>
@@ -54,9 +66,16 @@ export default function Projects() {
                   variant="top"
                   src={require("../../images/videoSearch.jpg")}
                   className="projectImg"
+                  onClick={() =>
+                    goToGitHub(
+                      "https://github.com/pavansai505/AN-AUTOMATED-SEARCH-ENGINE-BASED-CONTENT-CATEGORIZATION-OF-VIDEO-USING-"
+                    )
+                  }
                 />
                 <Card.Body className="mt-3">
-                  <Card.Title className='mainInfoName'>Search Engine</Card.Title>
+                  <Card.Title className="mainInfoName">
+                    Search Engine
+                  </Card.Title>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>
@@ -79,11 +98,14 @@ export default function Projects() {
               >
                 <Card.Img
                   variant="top"
-                  src={require("../../images/elearning.png")}
+                  src={require("../../images/elearning.jpg")}
                   className="projectImg"
+                  onClick={() =>
+                    goToGitHub("https://github.com/pavansai505/DeepCodecGuru")
+                  }
                 />
                 <Card.Body className="mt-3">
-                  <Card.Title className='mainInfoName'>E-Learning</Card.Title>
+                  <Card.Title className="mainInfoName">E-Learning</Card.Title>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>

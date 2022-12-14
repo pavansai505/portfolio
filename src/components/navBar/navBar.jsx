@@ -6,18 +6,34 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import Media from "react-media";
 import { GiHamburgerMenu } from "react-icons/gi";
 import resume from "../../images/resume.pdf";
-import { BsSunFill,BsMoonStarsFill } from "react-icons/bs";
+import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
+import { IoIosHome, IoIosInformationCircleOutline } from "react-icons/io";
+import { HiOutlineDocument } from "react-icons/hi";
+
 function NavBar() {
   const [show, setShow] = React.useState(false);
-  const [mode,setMode]=React.useState(true)
+  const [mode, setMode] = React.useState(true);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const changeTheme = () => {
+    setMode(!mode);
+    if (mode) {
+      document.getElementById("home").classList.add("darkMode");
+      document.body.classList.add("darkBody");
+    } else {
+      document.getElementById("home").classList.remove("darkMode");
+      document.body.classList.remove("darkBody");
+    }
+  };
   return (
     <>
       <Navbar bg="light" variant="light" id="nav">
         <Container>
-          <Navbar.Brand href="#home" className="navBarFont">
+          <Navbar.Brand
+            href="#home"
+            className="navBarFont"
+            onClick={() => changeTheme()}
+          >
             BARUGALA PAVAN SAI
           </Navbar.Brand>
           <Media
@@ -51,7 +67,7 @@ function NavBar() {
                     fontSize: "1.5rem",
                     paddingLeft: "1rem",
                   }}
-                  onClick={()=>setMode(!mode)}
+                  onClick={()=>changeTheme()}
                 >
                   {
                     mode?<BsSunFill style={{color:"orange"}}></BsSunFill>:<BsMoonStarsFill  style={{color:"#39FF14"}}></BsMoonStarsFill>
@@ -60,13 +76,47 @@ function NavBar() {
               </Nav>
             )}
           />
+
           <Media
             query="(max-width: 800px)"
             render={() => (
               <Nav className="ms-auto">
                 <GiHamburgerMenu onClick={handleShow}></GiHamburgerMenu>
-                <Offcanvas show={show} onHide={handleClose} className="offCanvasNav">
-                  <Offcanvas.Header closeButton style={{backgroundColor:'#212529'}}>
+                <Offcanvas
+                  show={show}
+                  onHide={handleClose}
+                  className="offCanvasNav"
+                  id="offCanvasNavDark"
+                  onEntered={() => {
+                    if (!mode) {
+                      document
+                        .getElementById("offCanvasNavDark")
+                        .classList.add("offCanvasNavDark");
+                    }
+                  }}
+                  onEntering={() => {
+                    if (!mode) {
+                      document
+                        .getElementById("offCanvasNavDark")
+                        .classList.add("offCanvasNavDark");
+                    }
+                  }}
+                  onExited={() => {
+                    if (mode) {
+                      document
+                        .getElementById("offCanvasNavDark")
+                        .classList.remove("offCanvasNavDark");
+                    }
+                  }}
+                  onExiting={() => {
+                    if (mode) {
+                      document
+                        .getElementById("offCanvasNavDark")
+                        .classList.remove("offCanvasNavDark");
+                    }
+                  }}
+                >
+                  <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Menu</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
@@ -76,19 +126,26 @@ function NavBar() {
                           document.getElementById("nav").scrollIntoView();
                           handleClose();
                         }}
+                        style={{ display: "flex", alignItems: "center" }}
                       >
-                        Home
+                        <IoIosHome></IoIosHome>&nbsp; Home
                       </Nav.Link>
                       <Nav.Link
                         onClick={() => {
                           document.getElementById("about").scrollIntoView();
                           handleClose();
                         }}
+                        style={{ display: "flex", alignItems: "center" }}
                       >
-                        About
+                        <IoIosInformationCircleOutline></IoIosInformationCircleOutline>
+                        &nbsp; About
                       </Nav.Link>
-                      <Nav.Link href={resume} target="_blank">
-                        Resume
+                      <Nav.Link
+                        href={resume}
+                        target="_blank"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        <HiOutlineDocument></HiOutlineDocument>&nbsp; Resume
                       </Nav.Link>
                     </Nav>
                   </Offcanvas.Body>
@@ -96,6 +153,21 @@ function NavBar() {
               </Nav>
             )}
           />
+          <Nav.Item
+            style={{
+              display: "flex",
+              alignItems: "center",
+              fontSize: "1rem",
+              paddingLeft: "1rem",
+            }}
+            onClick={() => changeTheme()}
+          >
+            {mode ? (
+              <BsSunFill style={{ color: "orange" }}></BsSunFill>
+            ) : (
+              <BsMoonStarsFill style={{ color: "#39FF14" }}></BsMoonStarsFill>
+            )}
+          </Nav.Item>
         </Container>
       </Navbar>
     </>
