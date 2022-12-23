@@ -5,7 +5,7 @@ import { Paper } from "@mui/material";
 import { FiArrowDown } from "react-icons/fi";
 export default function MainInfo(props) {
   return (
-    <Container style={{ display:'flex',justifyContent:'center',alignItems:'center' , height:'50rem' }} id="mainInfo">
+    <Container style={{ display:'flex',justifyContent:'center',alignItems:'center' }} id="mainInfo">
       
         <Row
           lg={1}
@@ -22,8 +22,6 @@ export default function MainInfo(props) {
           <Col className="arrowContainer">
             <Paper
               onClick={() =>{
-
-                document.getElementById("home").classList.remove("homeOverFlow")
                 document.getElementById("about").scrollIntoView()}
               }
               style={{ height: "4rem", width: "4rem" }}

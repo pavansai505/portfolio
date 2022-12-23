@@ -10,28 +10,29 @@ export default function Projects() {
   return (
     <Container id="projects">
       <div className="projectsHeading">
-        <h4 className="mainInfoName">Projects</h4>
+        <h4 className="mainInfoName text-uppercase">Projects</h4>
         <a
           href="https://github.com/pavansai505"
           target="_blank"
-          style={{ color: "cyan", fontSize: "1.2rem", textDecoration: "none" }}
+          style={{ fontSize: "1rem", textDecoration: "none",border:'1px solid black',padding:'0.3rem 0.5rem',backgroundColor:'rgba(0,0,0,0.8)',color:'white',borderRadius:'5px' }}
+          className="viewMore"
         >
-          view more <BsChevronDoubleRight></BsChevronDoubleRight>
+          Discover
         </a>
       </div>
 
       <Row
         className="mt-5 pb-5"
-        lg={4}
+        lg={3}
         md={1}
         xs={1}
         style={{ justifyContent: "space-around" }}
       >
-        <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
+        {/* <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
           <Col>
             <center>
               <Card
-                style={{ width: "20rem", padding: "1rem", textAlign: "start" }}
+                style={{ width: "20rem",  textAlign: "start" }}
                 className="projectCard h-100 mt-3 "
               >
                 <Card.Img
@@ -44,6 +45,7 @@ export default function Projects() {
                 />
                 <Card.Body className="mt-3">
                   <Card.Title className="mainInfoName">E-Commerce</Card.Title>
+                  <Card.Text>Frame work : MERN</Card.Text>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>
@@ -59,7 +61,7 @@ export default function Projects() {
           <Col>
             <center>
               <Card
-                style={{ width: "20rem", padding: "1rem", textAlign: "start" }}
+                style={{ width: "20rem",  textAlign: "start" }}
                 className="projectCard h-100 mt-3"
               >
                 <Card.Img
@@ -76,6 +78,7 @@ export default function Projects() {
                   <Card.Title className="mainInfoName">
                     Search Engine
                   </Card.Title>
+                  <Card.Text>Frame work : Flask</Card.Text>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>
@@ -93,7 +96,7 @@ export default function Projects() {
           <Col>
             <center>
               <Card
-                style={{ width: "20rem", padding: "1rem", textAlign: "start" }}
+                style={{ width: "20rem",  textAlign: "start" }}
                 className="projectCard h-100 mt-3"
               >
                 <Card.Img
@@ -106,12 +109,110 @@ export default function Projects() {
                 />
                 <Card.Body className="mt-3">
                   <Card.Title className="mainInfoName">E-Learning</Card.Title>
+                  <Card.Text>Frame work : MERN</Card.Text>
                   <Button
                     className="mt-2 projectButton"
                     onClick={() =>
                       goToGitHub("https://github.com/pavansai505/DeepCodecGuru")
                     }
                   >
+                    GitHub
+                  </Button>
+                </Card.Body>
+              </Card>
+            </center>
+          </Col>
+        </Fade> */}
+        <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
+          {/* project 1 E-com */}
+          <Col>
+            <center>
+              <Card
+                style={{
+                  width: "20rem",
+                  position: "relative",
+                  backgroundColor: "black",
+                }}
+                className="projectV2Card"
+              >
+                <Card.Img
+                  variant="top"
+                  src={require('../../images/ecommerceV2.jpg')}
+                  className="projectV2Img"
+                />
+                <Card.Body className="projectV2CardBody">
+                  <Card.Title className="projectV2Title">E-Commerce</Card.Title>
+                  <Card.Text >
+                  ShopForHome provides an easy-to-use, all-in-one platform to create, manage and customize a store built on the MERN stack.
+                  </Card.Text>
+                  <Button style={{ backgroundColor: "black" }} variant="dark"
+                  onClick={() =>
+                    goToGitHub("https://github.com/pavansai505/E-Commerce")
+                  }>
+                    GitHub
+                  </Button>
+                </Card.Body>
+              </Card>
+            </center>
+          </Col>
+          {/* project-2 deep learning search engine */}
+          <Col>
+            <center>
+              <Card
+                style={{
+                  width: "20rem",
+                  position: "relative",
+                  backgroundColor: "black",
+                }}
+                className="projectV2Card"
+              >
+                <Card.Img
+                  variant="top"
+                  src={require('../../images/videoSearchV2.jpg')}
+                  className="projectV2Img"
+                />
+                <Card.Body className="projectV2CardBody">
+                  <Card.Title className="projectV2Title">Search Engine</Card.Title>
+                  <Card.Text>
+                  A video search engine providing improved search quality and user experience through specialized classification and categorization.
+                  </Card.Text>
+                  <Button style={{ backgroundColor: "black" }} variant="dark"
+                  onClick={() =>
+                    goToGitHub(
+                      "https://github.com/pavansai505/AN-AUTOMATED-SEARCH-ENGINE-BASED-CONTENT-CATEGORIZATION-OF-VIDEO-USING-"
+                    )
+                  }>
+                    GitHub
+                  </Button>
+                </Card.Body>
+              </Card>
+            </center>
+          </Col>
+          {/* project-3 E-learning */}
+          <Col>
+            <center>
+              <Card
+                style={{
+                  width: "20rem",
+                  position: "relative",
+                  backgroundColor: "black",
+                }}
+                className="projectV2Card"
+              >
+                <Card.Img
+                  variant="top"
+                  src={require('../../images/ecommerceV2.jpg')}
+                  className="projectV2Img"
+                />
+                <Card.Body className="projectV2CardBody">
+                  <Card.Title className="projectV2Title">E-Learning</Card.Title>
+                  <Card.Text>
+                  A platform providing a unified experience combining multiple educational sites such as nptel and udemy for the convenience of students.
+                  </Card.Text>
+                  <Button style={{ backgroundColor: "black" }} variant="dark"
+                  onClick={() =>
+                    goToGitHub("https://github.com/pavansai505/DeepCodecGuru")
+                  }>
                     GitHub
                   </Button>
                 </Card.Body>

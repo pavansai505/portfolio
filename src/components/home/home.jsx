@@ -11,24 +11,25 @@ import Experience from "../experience/experience";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import About from "../about/about";
+import MyVerticallyCenteredModal from "../modal/userInfoModal";
 function Home() {
-  const [theme, setTheme] = React.useState("light");
-  const darkTheme = createTheme({
-    palette: {
-      mode: theme,
-    },
-  });
+  const [modalShow, setModalShow] = React.useState(true);
+
+  
   const ref = useRef(null);
   const handleClick = () => {
     console.log("ok", ref);
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="home homeOverFlow" id="home" >
+    <div className="home" id="home">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-
+      {/* <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      ></MyVerticallyCenteredModal> */}
       <NavBar></NavBar>
       <MainInfo handleClick={handleClick}></MainInfo>
       <About></About>

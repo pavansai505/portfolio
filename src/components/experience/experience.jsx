@@ -8,10 +8,9 @@ export default function Experience() {
     <Container
       className="mt-5 mb-5 p-5"
       id="experience"
-      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
-      <h4 className='mainInfoName' >Experience</h4>
-      <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
+      <h4 className='mainInfoName text-uppercase' style={{alignItems:'start'}}>Experience</h4>
+      <Fade delay={500} cascade damping={0.3} triggerOnce={true} style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
         <Paper
           elevation={24}
           className=" mt-5 experienceCard"
@@ -49,7 +48,7 @@ export default function Experience() {
               </Col>
               <Col
                 style={{ textAlign: "center" }}
-                className="ms-auto"
+                className="m-auto"
                 lg={4}
                 md={12}
                 sm={12}
@@ -96,7 +95,7 @@ export default function Experience() {
               </Col>
               <Col
                 style={{ textAlign: "center" }}
-                className="ms-auto"
+                className="m-auto"
                 lg={4}
                 md={12}
                 sm={12}

@@ -20,14 +20,16 @@
 
 
 
+body {
+    background-color: #f8f9fa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
 .home {
     /* background-color: rgb(86, 210, 206); */
     height: 100vh;
 }
 
-.homeOverFlow {
-    overflow: hidden;
-}
 
 h1::before {
     transform: scaleX(0);
@@ -142,11 +144,15 @@ html {
     }
 }
 
+#mainInfo {
+    height: calc(100vh - 56px);
+}
+
 
 
 .arrowContainer {
     position: relative;
-    margin-top: 12rem;
+    margin-top: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,20 +273,63 @@ html {
 }
 
 .skillsBox {
-    height: 5rem;
-    width: 5rem;
+    height: 5.5rem;
+    width: 5.5rem;
     border-radius: 50px !important;
-    box-shadow: rgba(2, 224, 147, 0.25) 0px 54px 55px, rgba(2, 224, 147, 0.12) 0px -12px 30px, rgba(2, 224, 147, 0.12) 0px 4px 6px, rgba(2, 224, 147, 0.17) 0px 12px 13px, rgba(2, 224, 147, 0.09) 0px -3px 5px !important;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-
+    /* border: 1px solid black; */
+    padding: 3px;
+    transition: transform 250ms ease-in-out;
+    position: relative;
 }
+
+
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 50px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  
+
+/* .skillsBox::before {
+    content: "";
+    position: absolute;
+    border: 5px solid grey;
+    z-index: -1;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50px;
+    
+} */
 
 .skillsBox:hover {
     transform: scale(1.05);
+    
 }
+
 
 .projectsHeading {
     display: flex;
@@ -288,19 +337,27 @@ html {
     justify-content: space-between;
 }
 
+/* 
 .projectCard {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: transform 250ms ease-in-out;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+
 
 }
 
 .projectImg {
-    height: 10rem;
+    height: 12rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
+} */
 
+/* 
 .projectImg:hover {
     transform: scale(1.02);
-}
+} */
 
 .projectButton {
     background-color: white;
@@ -308,6 +365,76 @@ html {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-color: white !important;
 }
+
+.projectV2Img{
+    opacity: 1;
+}
+
+.projectV2Title{
+    
+}
+
+.projectV2Card{
+    margin-top: 1rem;
+    overflow: hidden;
+    height: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 650ms ease-out;
+
+}
+
+.projectV2Card:hover > .projectV2CardBody{
+    top:7rem;
+
+}
+.projectV2Card:hover > .projectV2Img{
+    opacity: 0.4;
+
+}
+
+.projectV2Card:hover{
+    transform: scale(1.02);
+    
+}
+.projectV2CardBody{
+    position: absolute;
+    color: white;    
+    top: 23rem;
+    transition: top 650ms ease-out;
+    padding: 0 2rem;
+    text-align: start;
+    z-index: 5;
+}
+
+.projectV2Card::before {
+    content: "";
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+.experienceCard {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 800px) {

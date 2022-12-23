@@ -46,15 +46,15 @@
     .navBarFont{
         color:#39FF14;
     }
-    .navBarFont:hover{
-        color:#39FF14 !important;
-        transform: scale(1.1);
-    }
+    
     h1::before {
         background: #212529;
     }
     .skillsBox{
         background-color: #212529 !important;
+    }
+    .flaskDark{
+        color: white;
     }
     .projectCard {
         background-color: #212529;
@@ -62,6 +62,9 @@
     .experienceCard{
         background-color: #212529 !important;
         color: #39FF14 !important;
+    }
+    .viewMore{
+        color: #39FF14;
     }
     .projectButton{
         background-color: #000 !important;
@@ -84,7 +87,9 @@
     .aboutImage {
         --color:#39FF14 !important;
     }    
-      
+    .skillsBox{
+        box-shadow: rgba(2, 224, 147, 0.25) 0px 54px 55px, rgba(2, 224, 147, 0.12) 0px -12px 30px, rgba(2, 224, 147, 0.12) 0px 4px 6px, rgba(2, 224, 147, 0.17) 0px 12px 13px, rgba(2, 224, 147, 0.09) 0px -3px 5px !important;
+    }
   #stars {
     width: 1px;
     height: 1px;
@@ -147,6 +152,7 @@
       transform: translateY(-2000px);
     }
   }
+  
   
     
   }
