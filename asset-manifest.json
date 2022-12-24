@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5f18e31d.css",
-    "main.js": "/portfolio/static/js/main.d277f32b.js",
+    "main.css": "/portfolio/static/css/main.8f977772.css",
+    "main.js": "/portfolio/static/js/main.1b4f17a6.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.b63dcc8a70e75703d225.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.656880c8db3eb259c9fd.pdf",
     "static/media/snapFilter.jpg": "/portfolio/static/media/snapFilter.3145e5b04d68fe2f86df.jpg",
     "static/media/videoSearchV2.jpg": "/portfolio/static/media/videoSearchV2.539e8d7c3fc3343c7369.jpg",
     "static/media/greatlearning.png": "/portfolio/static/media/greatlearning.d0147989e5573e155615.png",
@@ -12,12 +12,12 @@
     "static/media/virtusa.png": "/portfolio/static/media/virtusa.61de5209216152b27e9e.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.5f18e31d.css.map": "/portfolio/static/css/main.5f18e31d.css.map",
-    "main.d277f32b.js.map": "/portfolio/static/js/main.d277f32b.js.map",
+    "main.8f977772.css.map": "/portfolio/static/css/main.8f977772.css.map",
+    "main.1b4f17a6.js.map": "/portfolio/static/js/main.1b4f17a6.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f18e31d.css",
-    "static/js/main.d277f32b.js"
+    "static/css/main.8f977772.css",
+    "static/js/main.1b4f17a6.js"
   ]
 }
