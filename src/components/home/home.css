@@ -391,7 +391,9 @@ html {
     opacity: 0.4;
 
 }
-
+.projectV2Img{
+    transition: opacity 650ms ease-out;
+}
 .projectV2Card:hover{
     transform: scale(1.02);
     

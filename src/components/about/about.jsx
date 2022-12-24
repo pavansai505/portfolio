@@ -22,7 +22,7 @@ export default function About() {
           }}
           className="mainInfoName mt-5"
         >
-          <span style={{ fontWeight: "bolder" }}>" I am</span> an enthusiastic{" "}
+          {/* <span style={{ fontWeight: "bolder" }}>" I am</span> an enthusiastic{" "}
           <span style={{ fontWeight: "bold" }}>UI/UX developer</span> from
           India, who has a strong grasp of the{" "}
           <span style={{ fontWeight: "bold" }}>MERN stack</span>, having
@@ -31,7 +31,15 @@ export default function About() {
           <span style={{ fontWeight: "bold" }}>full-stack development</span>
           &nbsp; and creating responsive websites. Aside from this, I have good
           leadership skills and am committed to continually improving my craft.
-          <span style={{ fontWeight: "bolder" }}>"</span>
+          <span style={{ fontWeight: "bolder" }}>"</span> */}
+          <span style={{ fontWeight: "bolder" }}>I am</span>{" "} a skilled <span style={{ fontWeight: "bolder" }}>full stack developer</span> with frameworks such as <span style={{ fontWeight: "bolder" }}>Flask,
+          React and Node.js,</span> as well as knowledge of software development
+          methodologies and best practices. Ability to quickly adapt and learn
+          new technologies, optimize existing applications and develop effective
+          solutions. Possess excellent communication and collaboration skills
+          and a passion for creating high-quality applications. Looking to work
+          with a team that values collaboration and creativity in order to
+          continuously improve applications, processes and procedures.
         </p>
       </Container>
     </Container>
