@@ -2,14 +2,24 @@ import React from 'react'
 import './test.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Typography } from '@mui/material';
 
 export default function Test() {
+  window.addEventListener("scroll",()=>{
+    const val=document.getElementById("vals")
+    const ok=window.scrollY
+    
+    val.style.top=`-${ok/10}rem`
+  })
   return (
-    <div className='projectV3Div'>
-      <Card style={{ width: '20rem',position:'relative',backgroundColor:'black' }} className="projectV3Card">
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1541411438265-4cb4687110f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGQlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" className='projectV3Img'/>
+    <div style={{overflowX:'hidden'}}>
+      <div className='projectV3Div'>
       
-    </Card>
+      <Typography align='center' variant='h1' id="vals">ok</Typography>
+    </div>
+    <div className='projectV3Div'>
+      <Button>ok</Button>
+    </div>
     </div>
   )
 }

@@ -7,22 +7,11 @@
     position: relative;
 }
 
-.projectV3Card {
-    /* overflow: hidden; */
+#vals{
+    top:0rem;
+    transition: top 0.5s ease-out;
     position: relative;
+    
 }
 
 
-
-
-
-.projectV3Card::before {
-    content: "";
-    position: absolute;
-    height: 30rem;
-    width: 20rem;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-
-}

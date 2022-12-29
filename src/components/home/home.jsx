@@ -26,10 +26,10 @@ function Home() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      {/* <MyVerticallyCenteredModal
+      <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
-      ></MyVerticallyCenteredModal> */}
+      ></MyVerticallyCenteredModal>
       <NavBar></NavBar>
       <MainInfo handleClick={handleClick}></MainInfo>
       <About></About>

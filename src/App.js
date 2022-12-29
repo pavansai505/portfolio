@@ -5,8 +5,8 @@ import Home from './components/home/home';
 import Test from './components/test/test';
 function App() {
   return (
-    <Home></Home>
-    // <Test></Test>
+    //<Home></Home>
+     <Test></Test>
   );
 }
 
