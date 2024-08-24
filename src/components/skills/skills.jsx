@@ -52,7 +52,7 @@ export default function Skills(props) {
                 style={{ textAlign: "center", marginTop: "1rem" }}
                 className="mainInfoName"
               >
-                React
+                Angular
               </h6>
             </Stack>
           </Col>

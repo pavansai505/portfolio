@@ -12,6 +12,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import About from "../about/about";
 import MyVerticallyCenteredModal from "../modal/userInfoModal";
+import AboutV2 from "../aboutV2/aboutV2";
 function Home() {
   const [modalShow, setModalShow] = React.useState(true);
 
@@ -33,6 +34,8 @@ function Home() {
       <NavBar></NavBar>
       <MainInfo handleClick={handleClick}></MainInfo>
       <About></About>
+      {/* This is a test for a new model. */}
+      {/* <AboutV2></AboutV2> */}
       <Skills refs={ref}></Skills>
       <Projects></Projects>
       <Experience></Experience>

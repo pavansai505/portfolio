@@ -11,6 +11,48 @@ export default function Experience() {
     >
       <h4 className='mainInfoName text-uppercase' style={{alignItems:'start'}}>Experience</h4>
       <Fade delay={500} cascade damping={0.3} triggerOnce={true} style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+        
+      <Paper
+      elevation={24}
+      className="mt-5 experienceCard"
+      sx={{ borderRadius: "25px", width: "60vw", minWidth: "20rem" }}
+    >
+      <Container className="">
+        <Row>
+          <Col lg={8} md={12} sm={12}>
+            <Row xs={1}>
+              <Col>
+                <h3>Project Engineer at Wipro</h3>
+              </Col>
+              <Col style={{ fontWeight: 'bold' }}>Mar 2023</Col>
+              <Col>
+                <ul>
+                  <li>
+                    Cultivated expertise in leading web technologies, including Spring Boot and Angular, with a strong emphasis on microservices architecture.
+                  </li>
+                  <li>
+                    Successfully completed advanced training in Azure cloud technologies and AI fundamentals, earning corresponding certifications.
+                  </li>
+                  <li>
+                    Engineered multiple projects, integrating sophisticated features such as security protocols and microservices.
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+          </Col>
+          <Col
+            style={{ textAlign: "center" }}
+            className="m-auto"
+            lg={4}
+            md={12}
+            sm={12}
+          >
+            <Image className="experienceImage" src={require("../../images/wipro.png")}></Image>
+          </Col>
+        </Row>
+      </Container>
+    </Paper>
+        
         <Paper
           elevation={24}
           className=" mt-5 experienceCard"
