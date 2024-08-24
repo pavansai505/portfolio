@@ -1,11 +1,12 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-
+import { Fade } from "react-awesome-reveal";
 export default function About() {
   return (
     <Container id="about" className="pt-5">
       <h4 className="mainInfoName text-uppercase">About</h4>
+      <Fade delay={300} cascade damping={0.3} triggerOnce={true}>
       <Container className="about">
         <Image
           src={require("../../images/snapFilter.jpg")}
@@ -17,7 +18,7 @@ export default function About() {
             minWidth: "20rem",
             wordBreak: "keep-all",
             textAlign: "justify",
-            fontSize: "1.25rem",
+            fontSize: "1.2rem",
             fontWeight: "450",
           }}
           className="mainInfoName mt-5"
@@ -42,6 +43,7 @@ export default function About() {
           continuously improve applications, processes and procedures.
         </p>
       </Container>
+      </Fade>
     </Container>
   );
 }

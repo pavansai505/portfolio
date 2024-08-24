@@ -9,10 +9,15 @@ import resume from "../../images/resume.pdf";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import { IoIosHome, IoIosInformationCircleOutline } from "react-icons/io";
 import { HiOutlineDocument } from "react-icons/hi";
+import Overlay from "react-bootstrap/Overlay";
+import Tooltip from "react-bootstrap/Tooltip";
+import { Button } from "react-bootstrap";
 
 function NavBar() {
   const [show, setShow] = React.useState(false);
   const [mode, setMode] = React.useState(true);
+  const [show2, setShow2] = React.useState(true);
+  const target = React.useRef(null);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const changeTheme = () => {
@@ -27,7 +32,7 @@ function NavBar() {
   };
   return (
     <>
-      <Navbar bg="light" variant="light" id="nav">
+      <Navbar bg="light" variant="light" id="nav" style={{marginTop:'5px'}}>
         <Container>
           <Navbar.Brand
             href="#home"
@@ -163,10 +168,20 @@ function NavBar() {
             onClick={() => changeTheme()}
           >
             {mode ? (
-              <BsSunFill style={{ color: "orange" }}></BsSunFill>
+              <>
+              <Button variant="link" ref={target} onClick={() => setShow2(false)}><BsSunFill style={{ color: "orange" }} ></BsSunFill></Button>
+              <Overlay target={target.current} show={show2} placement="bottom">
+              {(props) => (
+                <Tooltip id="overlay-example" {...props}>
+                  <strong>Click here.</strong>
+                </Tooltip>
+              )}
+            </Overlay>
+              </>
             ) : (
               <BsMoonStarsFill style={{ color: "#39FF14" }}></BsMoonStarsFill>
             )}
+            
           </Nav.Item>
         </Container>
       </Navbar>

@@ -23,9 +23,9 @@ function Home() {
   };
   return (
     <div className="home" id="home">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      <div className="starshow" id="stars"></div>
+      <div className="starshow" id="stars2"></div>
+      <div className="starshow" id="stars3"></div>
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}

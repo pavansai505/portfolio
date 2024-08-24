@@ -8,8 +8,11 @@ import {
   FaNode,
   FaDatabase,
   FaPython,
+  FaJava,
+  FaAngular
 } from "react-icons/fa";
-import { SiTypescript, SiFlask } from "react-icons/si";
+
+import { SiTypescript, SiFlask,SiSpringboot,SiHibernate } from "react-icons/si";
 import { MdMiscellaneousServices } from "react-icons/md";
 import { Fade } from "react-awesome-reveal";
 export default function Skills(props) {
@@ -35,6 +38,94 @@ export default function Skills(props) {
                 className="mainInfoName"
               >
                 React
+              </h6>
+            </Stack>
+          </Col> 
+          <Col className="mt-3">
+            <Stack direction="vertical">
+              <center>
+                <Paper className="skillsBox gradient-border " elevation={8}>
+                  <FaAngular style={{ color: "#c3002f" }}></FaAngular>
+                </Paper>
+              </center>
+              <h6
+                style={{ textAlign: "center", marginTop: "1rem" }}
+                className="mainInfoName"
+              >
+                React
+              </h6>
+            </Stack>
+          </Col>
+          <Col className="mt-3">
+            <Stack direction="vertical">
+              <center>
+                <Paper className="skillsBox gradient-border" elevation={8}>
+                  <FaNode style={{ color: "#008E36" }}></FaNode>
+                </Paper>
+              </center>
+              <h6
+                style={{ textAlign: "center", marginTop: "1rem" }}
+                className="mainInfoName"
+              >
+                Node
+              </h6>
+            </Stack>
+          </Col>
+          <Col className="mt-3">
+            <Stack direction="vertical">
+              <center>
+                <Paper className="skillsBox gradient-border" elevation={8}>
+                  <svg width="0" height="0">
+                    <linearGradient
+                      id="red-gradient"
+                      x1="80%"
+                      y1="80%"
+                      x2="80%"
+                      y2="30%"
+                    >
+                      <stop stopColor="#5382a1" offset="50%" />
+                      <stop stopColor="#f89820" offset="50%" />
+                    </linearGradient>
+                  </svg>
+                  <FaJava style={{ fill: "url(#red-gradient)" }}></FaJava>
+                </Paper>
+              </center>
+              <h6
+                style={{ textAlign: "center", marginTop: "1rem" }}
+                className="mainInfoName"
+              >
+                Java
+              </h6>
+            </Stack>
+          </Col>
+          <Col className="mt-3">
+            <Stack direction="vertical">
+              <center>
+                <Paper className="skillsBox gradient-border" elevation={8}>
+                  <SiSpringboot style={{ color: "#008E36" }}></SiSpringboot>
+                </Paper>
+              </center>
+              <h6
+                style={{ textAlign: "center", marginTop: "1rem" }}
+                className="mainInfoName"
+              >
+                Spring Boot
+              </h6>
+            </Stack>
+          </Col>
+          
+          <Col className="mt-3">
+            <Stack direction="vertical">
+              <center>
+                <Paper className="skillsBox gradient-border" elevation={8}>
+                  <SiHibernate style={{ color: "grey" }}></SiHibernate>
+                </Paper>
+              </center>
+              <h6
+                style={{ textAlign: "center", marginTop: "1rem" }}
+                className="mainInfoName"
+              >
+                Hibernate
               </h6>
             </Stack>
           </Col>
@@ -68,21 +159,7 @@ export default function Skills(props) {
               </h6>
             </Stack>
           </Col>
-          <Col className="mt-3">
-            <Stack direction="vertical">
-              <center>
-                <Paper className="skillsBox gradient-border" elevation={8}>
-                  <FaNode style={{ color: "#008E36" }}></FaNode>
-                </Paper>
-              </center>
-              <h6
-                style={{ textAlign: "center", marginTop: "1rem" }}
-                className="mainInfoName"
-              >
-                Node
-              </h6>
-            </Stack>
-          </Col>
+          
           <Col className="mt-3">
             <Stack direction="vertical">
               <center>

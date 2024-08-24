@@ -201,7 +201,7 @@ export default function Projects() {
               >
                 <Card.Img
                   variant="top"
-                  src={require('../../images/ecommerceV2.jpg')}
+                  src={require('../../images/elearningV3.jpg')}
                   className="projectV2Img"
                 />
                 <Card.Body className="projectV2CardBody">

@@ -158,4 +158,13 @@
   }
 
 
+ .starshow:nth-child(1){
+    transition: all 800ms ease-out;
+ }
+ .starshow:nth-child(2){
+    transition: all 3s ease-out;
+ }
+ .starshow:nth-child(3){
+    transition: all 5s ease-out;
+ }
   
