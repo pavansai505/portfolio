@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.319fc828.css",
-    "main.js": "/portfolio/static/js/main.f25a3ef0.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.ddd21103.css",
+    "main.js": "/portfolio/static/js/main.0066d12b.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/elearningV3.jpg": "/portfolio/static/media/elearningV3.18701fa1e32358a76bff.jpg",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.03071d35eeeeefed80ff.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.c71cb14235df7f6831db.pdf",
     "static/media/snapFilter.jpg": "/portfolio/static/media/snapFilter.3145e5b04d68fe2f86df.jpg",
+    "static/media/wipro.png": "/portfolio/static/media/wipro.3a596c5e62b873bd13a3.png",
     "static/media/videoSearchV2.jpg": "/portfolio/static/media/videoSearchV2.539e8d7c3fc3343c7369.jpg",
     "static/media/greatlearning.png": "/portfolio/static/media/greatlearning.d0147989e5573e155615.png",
     "static/media/ecommerceV2.jpg": "/portfolio/static/media/ecommerceV2.c6991791195a58a8ae56.jpg",
@@ -13,12 +14,12 @@
     "static/media/virtusa.png": "/portfolio/static/media/virtusa.61de5209216152b27e9e.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.319fc828.css.map": "/portfolio/static/css/main.319fc828.css.map",
-    "main.f25a3ef0.js.map": "/portfolio/static/js/main.f25a3ef0.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.ddd21103.css.map": "/portfolio/static/css/main.ddd21103.css.map",
+    "main.0066d12b.js.map": "/portfolio/static/js/main.0066d12b.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.319fc828.css",
-    "static/js/main.f25a3ef0.js"
+    "static/css/main.ddd21103.css",
+    "static/js/main.0066d12b.js"
   ]
 }
