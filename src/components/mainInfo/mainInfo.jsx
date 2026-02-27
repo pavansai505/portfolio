@@ -16,7 +16,7 @@ export default function MainInfo(props) {
           <Col>
             <Fade delay={500} cascade damping={0.3} triggerOnce={true}>
               <h1 className='mainInfoName'>BARUGALA PAVAN SAI</h1>
-              <p className='mainInfoName'><span>FULL STACK DEVELOPER</span> | <span>MERN STACK DEVELOPER</span></p>
+              <p className='mainInfoName'><span>JAVA FULL STACK DEVELOPER</span></p>
             </Fade>
           </Col>
           <Col className="arrowContainer">
